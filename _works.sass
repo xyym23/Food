@@ -1,0 +1,56 @@
+#works
+    h1
+        font-weight: 700
+        font-size: 60px
+        color: #36b3bd
+        margin-bottom: 60px
+    .box
+        display: flex
+        align-items: center
+        flex-direction: column
+        .mediabox
+            display: flex
+            align-items: center
+            flex-direction: column
+        .imgbox
+            display: flex
+            justify-content: center
+            width: 75%
+        .textbox
+            padding: 35px 55px
+            h2
+                font-weight: 700
+                font-size: 25px
+                margin-bottom: 9px
+            h4
+                font-size: 20px
+                color: #676f8b
+                line-height: 1.3
+    @media (max-width: 1000px)
+        .col-md-4
+            width: 100%
+            display: flex
+            align-items: center
+            flex-direction: column
+        .box
+            text-align: center
+            display: flex
+            align-items: center
+            flex-direction: column
+            .imgbox
+                width: 50%
+        h1
+            font-size: 40px  
+    @media (max-width: 500px)
+        h1
+            font-size: 36px
+        .box
+            .imgbox
+                width: 40%
+            .textbox
+                h2
+                    font-size: 20px
+                h4
+                    font-size: 14px
+            
+        

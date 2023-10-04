@@ -1,0 +1,83 @@
+header
+    padding: 20px 0
+    .menu
+        .logoandbtn
+            width: 100%
+            display: flex
+            justify-content: space-between
+    .imgbox
+        width: 40px
+    nav
+        width: 100%
+        text-align: end
+        display: none
+        a
+            font-size: 20px
+            color: #8c8999
+            margin-right: 30px
+        .home-color
+            color: #74bebc
+    .btn
+        display: flex
+        align-items: center
+        color: #999999
+        border: 1px solid #999999
+        border-radius: 7px
+        padding: 8px 15px
+        .icon
+            i
+                margin: 0 8px
+
+    @media (min-width: 1000px)
+        .menu
+            nav
+                display: block
+            .btn
+                display: none
+
+    @media (max-width: 1000px)
+        .menu
+            &:hover
+                flex-direction: column
+                align-items: flex-start
+                text-align: start
+                nav
+                    display: flex
+                    flex-direction: column
+                    text-align: start
+                    a
+                        font-size: 20px
+                        margin-right: 0
+                        margin: 10px      
+                .btn
+                    border: 3px solid #999999
+                .logoandbtn
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+        .imgbox
+            width: 45px
+
+    @media (max-width: 600px)
+        .menu
+            .logoandbtn
+                padding: 0 20px 0
+        .imgbox
+            width: 35px
+        nav
+            display: none
+            a
+                font-size: 14px
+                margin-right: 10px
+
+    @media (max-width: 350px)
+        .menu
+            flex-direction: column
+            align-items: center
+            text-align: center
+            .logoandbtn
+                padding: 0 10px 0
+            .btn
+                width: 80px
+        nav
+            margin-top: 10px
